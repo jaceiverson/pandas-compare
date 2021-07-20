@@ -139,7 +139,7 @@ class Compare():
                         'Rows Removed': [self.remove.shape[0]],
                         "Columns Added": [len(self.added_cols)],
                         "Columns Removed": [len(self.removed_cols)],
-                        'Rows Changed': [self.results.shape[0]]
+                        'Total Changes': [self.results.shape[0]]
                         }
 
         return DataFrame.from_dict(summary_dict)
