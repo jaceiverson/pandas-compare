@@ -12,6 +12,8 @@ The DataFrames, must have the same index to compare correctly. An error will be 
 
 Initialize and call the ```compare()``` method:
 ```py
+from pdcompare.compare import Compare
+
 compare_object = Compare(df1,df2)
 compare_object.compare()
 ```
