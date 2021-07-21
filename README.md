@@ -51,11 +51,11 @@ This data has the following columns
 ### ScreamingFrog Crawl Comparison (SEO)
 This is a great tool to compare crawls from different dates. Simply export the CSV files from ScreamingFrog. Then run this Google Colab notebook to create a Report in Google Sheets.
 <p align="center">
-  <a href=https://colab.research.google.com/drive/11QKyGo5xjw7RF9KnZbiP9yYNqvc9Qx6H?usp target=_blank><b>ScreamingFrog Crawl Compare in Colab</b></a>
+  <a href=https://colab.research.google.com/drive/11QKyGo5xjw7RF9KnZbiP9yYNqvc9Qx6H?usp target="_blank"><b>ScreamingFrog Crawl Compare in Colab</b></a>
 </p>
 
 ### Weed Price Comparison
-For a simple, get acquanted quickly example, use this. Thanks to <a href=https://veekaybee.github.io/2018/07/23/small-datasets/ target=_blank>Vicki</a> for pointing me in the direction of these small datasets; and thanks to <a href=https://github.com/frankbi/price-of-weed target=_blank>Frank BI</a> for supplying the free datasets. I used Frank's weed price data from 2004 and compared them to 2005 across the 50 states. The example can be found in this repo's example folder.
+For a simple, get acquanted quickly example, use this. Thanks to <a href=https://veekaybee.github.io/2018/07/23/small-datasets/ target="_blank">Vicki</a> for pointing me in the direction of these small datasets; and thanks to <a href=https://github.com/frankbi/price-of-weed target="_blank">Frank BI</a> for supplying the free datasets. I used Frank's weed price data from 2004 and compared them to 2005 across the 50 states. The example can be found in this repo's example folder.
 
 ## Thanks for using my code
 <p align="center">
