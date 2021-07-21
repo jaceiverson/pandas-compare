@@ -1,5 +1,7 @@
 # pdcompare
 
+[![PyPI Latest Release](https://img.shields.io/pypi/v/pdcompare.svg)](https://pypi.org/project/pdcompare/)
+
 Used to compare two pandas DataFrame objects to see how they changed.
 
 ```
