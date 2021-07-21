@@ -8,7 +8,7 @@ Used to compare two pandas DataFrame objects to see how they changed.
 pip install pdcompare
 ```
 ## Requirements
-The DataFrames, must have the same index to compare correctly. An error will be thrown if the index data-types do not match, and a warning will be thrown if the index names are differnt.
+The DataFrames must have the same index to compare correctly. An error will be thrown if the index data-types do not match, and a warning will be thrown if the index names are different.
 
 ## STEPS
 
@@ -43,7 +43,7 @@ This data has the following columns
 | :------------- | :---------- |
 | ID | Index value by which we tracked the alterations |
 | COLUMN | Column that we saw an index change values |
-| from | Value of specificed column & index in the first table (old) |
+| from | Value of specified column & index in the first table (old) |
 | to | Value of specified column & index in the second table (new) |
 
 
@@ -55,7 +55,7 @@ This is a great tool to compare crawls from different dates. Simply export the C
 </p>
 
 ### Weed Price Comparison
-For a simple, get acquanted quickly example, use this. Thanks to <a href=https://veekaybee.github.io/2018/07/23/small-datasets/ target="_blank">Vicki</a> for pointing me in the direction of these small datasets; and thanks to <a href=https://github.com/frankbi/price-of-weed target="_blank">Frank BI</a> for supplying the free datasets. I used Frank's weed price data from 2004 and compared them to 2005 across the 50 states. The example can be found in this repo's example folder.
+For a simple, get acquainted quickly example, use this. Thanks to <a href=https://veekaybee.github.io/2018/07/23/small-datasets/ target="_blank">Vicki</a> for pointing me in the direction of these small datasets; and thanks to <a href=https://github.com/frankbi/price-of-weed target="_blank">Frank BI</a> for supplying the free datasets. I used Frank's weed price data from 2004 and compared them to 2005 across the 50 states. The example can be found in this repo's example folder.
 
 ## Thanks for using my code
 <p align="center">
@@ -64,3 +64,4 @@ If you found this library useful, I'd appreciate a coffee.
 <br>
 <a href="https://www.buymeacoffee.com/jaceiverson" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 </p>
+
