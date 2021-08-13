@@ -22,6 +22,10 @@ jan_05 = read_csv('https://raw.githubusercontent.com/frankbi/price-of-weed/maste
 # it will output a small summary 
 
 c = Compare(jan_04,jan_05)
+
+# adds the difference in old vs new columns
+c.set_change_comparison(True)
+
 c.compare()
 
 # use the output to get the differences in a dict form
@@ -30,4 +34,4 @@ c.output()
 
 # use results to just get the df of comparisons
 
-c.results
+c.change_detail

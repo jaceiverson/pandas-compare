@@ -1,6 +1,6 @@
 from pandas import DataFrame
 from numpy import where
-from warnings import warn,formatwarning
+from warnings import warn
 
 class Compare():
     '''
@@ -99,7 +99,7 @@ class Compare():
         if self.comparison_values:
             final['change'] = final['to'] - final['from']
 
-        self.results = final
+        self.change_detail = final
         
         return self.summary()
     
@@ -127,7 +127,7 @@ class Compare():
                         'ADDED_cols': self.added_cols,
                         'REMOVED': self.remove,
                         'REMOVED_cols': self.removed_cols,
-                        'CHANGED':self.results,
+                        'CHANGED':self.change_detail,
                         }
         return output_dict
     
@@ -139,7 +139,7 @@ class Compare():
                         'Rows Removed': [self.remove.shape[0]],
                         "Columns Added": [len(self.added_cols)],
                         "Columns Removed": [len(self.removed_cols)],
-                        'Total Changes': [self.results.shape[0]]
+                        'Total Changes': [self.change_detail.shape[0]]
                         }
 
         return DataFrame.from_dict(summary_dict)
