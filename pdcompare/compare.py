@@ -8,7 +8,7 @@ class Compare():
     It will show you what has been added,removed, and altered. 
     This will be output in a dictionary object for use.
     '''
-    def __init__(self, old_df: DataFrame , new_df: DataFrame) -> None:
+    def __init__(self, old_df: DataFrame , new_df: DataFrame, comparison_values: bool = False) -> None:
         '''
         old_df: what the df looked like
         new_df: what the df changed too
@@ -24,7 +24,7 @@ class Compare():
         # this currently only works with numerical (float/int)
         # values. For that reason, it defaults to False
         # but can be changed using .set_change_comparison()
-        self.comparison_values = False
+        self.comparison_values = comparison_values
 
         # find which columns were added/removed
         # column based comparison
@@ -47,6 +47,9 @@ class Compare():
             self.clean_df1.drop(columns=self.removed_cols,inplace=True)
         if self.added_cols is not None:
             self.clean_df2.drop(columns=self.added_cols,inplace=True)
+
+        # after everything has been cleaned, compare the dfs
+        self.compare()
 
     def __check_index(self) -> None:
         # check they are the same type
@@ -100,8 +103,6 @@ class Compare():
             final['change'] = final['to'] - final['from']
 
         self.change_detail = final
-        
-        return self.summary()
     
     def removed(self,full: bool = False) -> DataFrame:
         '''
