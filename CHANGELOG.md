@@ -1,2 +1,8 @@
+### 0.1.3 (2021-07-20)
+ - Changed import structure to allow for simpler imports
+
+### 0.1.2 (2021-07-20)
+ - Clarified variables
+
 ### 0.1.0 (2021-07-20)
-BETA
+ - BETA
