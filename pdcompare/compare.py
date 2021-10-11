@@ -100,7 +100,10 @@ class Compare():
         final.dropna(how='all',inplace=True)
 
         if self.comparison_values:
+            # gross change numbers
             final['change'] = final['to'] - final['from']
+            # percent change numbers
+            final['pct_change'] = final['change'] / final['from']
 
         self.change_detail = final
     
