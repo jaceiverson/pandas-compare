@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pdcompare",
-    version="0.1.3",
+    version="0.1.4",
     author="Jace Iverson",
     author_email="iverson.jace@gmail.com",
     description="Used to compare 2 Pandas DFs",
