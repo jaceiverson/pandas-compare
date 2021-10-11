@@ -1,6 +1,7 @@
 # pdcompare
 
 [![PyPI Latest Release](https://img.shields.io/pypi/v/pdcompare.svg)](https://pypi.org/project/pdcompare/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 Used to compare two pandas DataFrame objects to see how they changed.
 
