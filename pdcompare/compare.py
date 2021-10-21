@@ -98,7 +98,7 @@ class Compare:
         try:
             ne_stacked = (self.clean_df1 != self.clean_df2).stack()
             changed = ne_stacked[ne_stacked]
-            changed.index.names = ["ID", "Column"]
+            changed.index.names = self.clean_df1.index.names + ["Column"]
             difference_locations = where(self.clean_df1 != self.clean_df2)
 
         except ValueError:
