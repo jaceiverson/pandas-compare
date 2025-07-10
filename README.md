@@ -9,7 +9,9 @@ Used to compare two pandas DataFrame objects to see how they changed.
 pip install pdcompare
 ```
 ## Requirements
-The DataFrames must have the same index to compare correctly. An error will be thrown if the index data-types do not match, and a warning will be thrown if the index names are different.
+- DataFrames must have the same index to compare correctly
+- Warning will be thrown if the data types are non-numeric and you use `.set_change_comparison(True)` 
+- Warning will be thrown if the index names are different
 
 ## STEPS
 
