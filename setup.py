@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pdcompare",
-    version="0.1.5",
+    version="0.1.6",
     author="Jace Iverson",
     author_email="iverson.jace@gmail.com",
     description="Used to compare 2 Pandas DFs",
@@ -15,7 +15,5 @@ setuptools.setup(
     project_urls={
         "Bug Tracker": "https://github.com/jaceiverson/pandas-compare",
     },
-    packages = ['pdcompare'
-            ]
-
+    packages=["pdcompare"],
 )
