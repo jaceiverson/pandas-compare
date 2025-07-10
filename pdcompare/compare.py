@@ -1,6 +1,7 @@
-from pandas import DataFrame
-from numpy import where
 from warnings import warn
+
+from numpy import nan_to_num, where
+from pandas import DataFrame
 
 
 class Compare:
@@ -113,10 +114,17 @@ class Compare:
         final.dropna(how="all", inplace=True)
 
         if self.comparison_values:
-            # gross change numbers
-            final["change"] = final["to"] - final["from"]
-            # percent change numbers
-            final["pct_change"] = final["change"] / final["from"]
+            try:
+                # gross change numbers
+                final["change"] = final["to"] - final["from"]
+                final["pct_change"] = nan_to_num(final["change"] / final["from"], nan=0)
+                final["pct_change"] = final["pct_change"].apply(
+                    lambda x: f"{x:.2%}" if x != 0 else "0.00%"
+                )
+            except TypeError:
+                warn(
+                    "You are trying to compare non-numerical values. No change value calculated"
+                )
 
         self.change_detail = final
 

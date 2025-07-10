@@ -1,5 +1,6 @@
-pandas==1.3
+pandas
 
 # dev
-black==21.9b0
-mypy==0.910
+black
+mypy
+rich
